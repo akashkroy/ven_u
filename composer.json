@@ -1,0 +1,59 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"laravel/framework": "5.0.*",
+		"jenssegers/mongodb": "2.1.*",
+		"illuminate/html": "5.*",
+		"aws/aws-sdk-php-laravel": "~2.0",
+		"graham-campbell/flysystem": "~2.1",
+		"league/flysystem-aws-s3-v2": "~1.0",
+		"google/apiclient": "^2.0.0@RC",
+		"laravelcollective/html": "~5.0",
+		"guzzlehttp/guzzle": "~5.0",
+		"cboden/ratchet": "^0.3.5",
+		"paypal/merchant-sdk-php":"3.8.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1"
+	},
+	"autoload": {
+		"classmap": [
+			"database",
+			"app/Models/User.php",
+			"app/Helpers/EmailSender.php"
+		],
+		"psr-4": {
+			"OurScene\\": "app/"
+		},
+		"files": [
+			"app/Helpers/helpers.php"
+		]
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php -r \"copy('.env.example', '.env');\"",
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}

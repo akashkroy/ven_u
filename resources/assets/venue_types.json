@@ -1,0 +1,8 @@
+{
+	"music" : "Music",
+	"comedy" : "Comedy",
+	"theatrical" : "Theatrical",
+	"dance" : "Dance",
+	"ages_18" : "Adults (18 and older)",
+	"ages_21" : "Adults (21 and older)"
+}
