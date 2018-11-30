@@ -1,0 +1,497 @@
+@import 'base/config';
+@import 'base/typography';
+@import 'base/utils';
+
+html{
+	height: 100%;
+
+	font-size: 12px;
+
+	@media only screen and (min-width : 768px) {
+		font-size: 12px;
+	}
+}
+
+body{
+	height: 85%;
+	@media only screen and (min-width : 768px) {
+		height:100%;
+	}
+	width:100%;
+	font-family: "OpenSans-Regular";
+
+    button:focus{
+    	outline: 0;
+    }
+}
+
+footer{
+	height:15%;
+	@media only screen and (min-width : 768px) {
+		height:0%;
+	}
+	background-color:rgba(83,77,147,1) !important;
+}
+
+
+a, a:hover, a:visited, a:focus{
+	text-decoration: none;
+}
+
+.modal{
+	width:95%;
+	max-height:85%;
+	@media (min-width: 601px) {
+		width:80%;
+		max-height:80%;
+	}
+}
+
+
+.main{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height:100%;
+    //min-width:100%;
+}
+
+.body-artist{
+	@media (min-width: 601px) {
+		background-image: image-url("backgrounds/signin-artist.jpg",false, true);
+	}
+}
+
+.body-venue{
+	@media (min-width: 601px) {
+		background-image: image-url("backgrounds/signin-venue.jpg",false, true);
+	}
+}
+
+.body-reg-artist{
+	@media (min-width: 601px) {
+		background-image: image-url("backgrounds/register-artist.jpg",false, true);
+	}
+}
+
+.body-reg-venue{
+	@media (min-width: 601px) {
+		background-image: image-url("backgrounds/register-venue.jpg",false, true);
+	}
+}
+.register-heading{
+	text-align: center;
+	&>div{
+		display: inline-block;
+		width: auto;
+		margin: 0 auto;
+	}
+	span{
+		display: block;
+		text-align: left;
+	}
+}
+/**
+	Signin page
+**/
+
+#change-type-div{
+	padding: 20px 10px;
+	border-bottom: 1px solid $separator-color-1;
+
+	@media only screen and (min-width : 601px) {
+		height: 50px;
+		border-bottom: 0;
+	}
+
+	div{
+		*{
+			vertical-align: middle;
+		}
+	}
+
+	span{
+		font-size: 1.4rem;
+	}
+
+	#m-ourscene-logo{
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	.change-type-btn{
+		float: right;
+		padding: 0;
+		width: 150px;
+	}
+
+	.l-change-type-btn{
+		background-color: Transparent;
+		padding: 10px 20px;
+		border-radius: 5px;
+		margin: 10px 30px;
+		border: solid 1px $base-color-1;
+		color: #FFF;
+	}
+}
+
+/**
+	Signin Container
+**/
+
+#login-form-container{
+
+	width:100%;
+	padding-bottom:30px;
+
+	@media (min-width: 601px) {
+
+		width: 350px;
+		border-radius: 10px;
+		background-color : $base-color-1;
+	    margin-top: 50px;
+
+	    position: absolute;
+	  	left: 50%;
+	  	transform: translateX(-50%);
+	}
+}
+
+#login-heading{
+	height: 60px;
+	text-align: center;
+	margin: 10px 10px;
+  	span{
+  		font-size: 22px;
+  		font-color: $brand-color-2;
+  		font-weight: 700;
+  		text-transform: capitalize;
+  	}
+
+	img{
+		width: 100px;
+		height: 100%;
+	}
+
+}
+
+#login-body{
+	margin: 40px 20px 20px 20px;
+}
+
+.login-textbox{
+
+}
+
+.remember-me{
+	margin: 20px;
+	text-align: center;
+}
+
+.login-btn-div{
+	text-align: center;
+}
+
+.login-btn{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.forgot-password{
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	a{
+		color: $brand-color-1;
+		border-bottom: 1px $brand-color-1 dotted;
+		text-decoration: uderline;
+	}
+}
+
+.signup-link-div{
+
+	@media (max-width: 601px) {
+		padding-top: 20px;
+	}
+
+	text-align: center;
+	margin: 0 auto;
+	a{
+		color: $brand-color-1;
+		border-bottom: 1px $brand-color-1 dotted;
+		text-decoration: uderline;
+	}
+}
+
+/**
+	Registration
+**/
+
+/* Register artist */
+
+#register-artist{
+
+	#details{
+
+		padding: 25px 5px;
+
+		@media only screen and (min-width : 768px) {
+			padding: 30px 15px;
+		}
+	}
+	
+	#materials{
+
+		padding: 25px 5px;
+
+		@media only screen and (min-width : 768px) {
+			padding: 30px 15px;
+		}
+	}
+
+	.note{
+		font-size: 11px;
+		font-style: italic;
+		padding: 20px 0;
+	}
+
+	.file-path{
+		height: 1.5rem;
+	}
+}
+
+.remove-song-btn, .remove-image-btn, .remove-video-btn{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.remove-material-icon{
+	display: block;
+	height: 30px;
+}
+
+/* Register venue */
+
+#register-venue{
+
+	#profile-details{
+
+		border-top: 1px solid rgba(160,160,160,0.2);
+		padding: 25px 15px;
+
+		@media only screen and (min-width : 768px) {
+			padding: 30px 25px;
+		}
+	}
+
+	.note{
+		font-size: 11px;
+		font-style: italic;
+		padding: 20px 0;
+	}
+
+}
+
+.required{
+	color: #f00;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.registration-panel{
+	padding: 0;
+	border-radius: 0px;
+	margin: 0;
+
+	@media (min-width: 992px) {
+		width:50%;
+	}
+}
+
+.register-heading{
+	padding: 20px 10px;
+
+  	span{
+  		font-size: 1.75rem;
+  		font-color: $brand-color-1;
+  		font-weight: 500;
+  	}
+
+	img{
+		height: 50px;
+		width: auto;
+	}
+}
+
+.register-heading-title{
+	text-align: center;
+  	padding:0;
+  	margin-bottom:10px;
+  	@media (min-width: 993px) {
+  		text-align: left;
+  	}
+}
+
+.reg-step-tab{
+
+	span{
+		font-size: 1.1rem;
+		color: $brand-color-1;
+		font-weight: 800;
+	}
+
+	margin: 0 20px;
+}
+
+.active-reg-step-tab{
+	span{
+		font-size: 14px;
+		color: $brand-color-2;
+	}
+}
+
+.inactive-reg-step-tab{
+	span{
+		color: $inactive-font-color;
+	}
+}
+
+.profile-picture-preview{
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	margin-left: 15px;
+}
+
+#input-profile-picture {
+	width: 250px;
+	display: inline;
+	border: none;
+	color: transparent;
+}
+
+.sign-in-link{
+	color: $brand-color-1;
+	border-bottom: 1px $brand-color-1 dotted;
+}
+
+.upload-btn{
+	//height: 2rem;
+	//line-height: 2rem;
+	background-color: #fff;
+	color: $brand-color-1;
+
+	&:hover{
+	//	height: 2rem;
+	//	line-height: 2rem;
+		background-color: #fff;
+		color: $brand-color-1;
+	}
+
+}
+
+.material-upload{
+	height: 1rem;
+
+	input{
+		height: 1rem;
+	}
+}
+
+.terms-and-condition-label{
+	font-size: 1rem;
+
+	@media only screen and (min-width : 992px) {
+		font-size: 0.9rem;
+    }
+
+	a{
+		color: $secondary-color-1;
+		border-bottom: none;
+	}
+}
+
+.i-agree-label{
+	a{
+		font-size: 1.2rem;
+		color: $brand-color-1;
+		border-bottom: none;
+	}
+}
+
+.reg-btn{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* Tabs */
+
+.tab-navigation{
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid rgba(160,160,160,0.2);
+
+	.col{
+		padding: 0;
+
+		a{
+			color: #333;
+			text-transform: none;
+			font-family: "OpenSans-SemiBold";
+			letter-spacing: normal;
+		}
+
+	}
+
+	.indicator{
+		height: 4px;
+		background-color: $brand-color-1 !important;
+	}
+}
+
+/* Modals */
+
+#artist-genre-modal{
+
+	#genre-collapsible{
+		padding: 0;
+	}
+
+	label{
+		font-family: "OpenSans-Regular";
+	}
+}
+
+/* Materialize overrides */
+
+.btn{
+	font-size: 10px;
+
+	@media only screen and (min-width : 768px) {
+		font-size: 12px;
+	}
+}
+
+input:not([type]):not([readonly]), input[type=text]:not([readonly]), input[type=password]:not([readonly]), input[type=email]:not([readonly]), input[type=url]:not([readonly]), input[type=time]:not([readonly]), input[type=date]:not([readonly]), input[type=datetime]:not([readonly]), input[type=datetime-local]:not([readonly]), input[type=tel]:not([readonly]), input[type=number]:not([readonly]), input[type=search]:not([readonly]), textarea.materialize-textarea:not([readonly]){
+	border-bottom: 1px solid #9e9e9e;
+	box-shadow: initial;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #9e9e9e;
+	box-shadow: initial;
+}
+
+.input-field{
+
+	label, label.active{
+		font-size: 1rem;
+		color: #333;
+		font-family: "OpenSans-SemiBold";
+	}
+
+	input:not([type]):focus + label, input[type=text]:focus + label, input[type=password]:focus + label, input[type=email]:focus + label, input[type=url]:focus + label, input[type=time]:focus + label, input[type=date]:focus + label, input[type=datetime]:focus + label, input[type=datetime-local]:focus + label, input[type=tel]:focus + label, input[type=number]:focus + label, input[type=search]:focus + label, textarea.materialize-textarea:focus + label{
+		color: #333;
+	}
+}

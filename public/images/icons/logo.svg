@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7a78af;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #5b5980;
+      }
+
+      .cls-3 {
+        fill: #6d68ac;
+      }
+
+      .cls-4 {
+        fill: #5b5890;
+      }
+
+      .cls-5 {
+        fill: #4f4a91;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M64.985,120.643L180.279,19,449.3,451.252l-61.917-10.7Z"/>
+  <path class="cls-2" d="M339.342,274.713l-33.094,32.1,134.51,132.672"/>
+  <path id="Shape_16_copy" data-name="Shape 16 copy" class="cls-3" d="M461.041,128.133L348.95,19,32.959,455.531l64.052-13.909Z"/>
+  <path class="cls-4" d="M165.333,270.434L38.3,442.692,187.752,292.9Z"/>
+  <path class="cls-5" d="M215.508,201.958l42.7-57.776L291.3,203.028l-38.432,48.147"/>
+  <path class="cls-6" d="M10.54,118.5H133.307L252.871,235.126,371.368,118.5H492L309.451,304.671,481.325,478H357.49L242.2,362.448,122.632,478H2L186.684,292.9Z"/>
+</svg>

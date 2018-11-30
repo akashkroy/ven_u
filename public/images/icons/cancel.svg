@@ -1,0 +1,17 @@
+<svg id="Group_4_copy" data-name="Group 4 copy" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #787878;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="251.5" cy="255.5" r="236.5"/>
+  <path id="Rectangle_5_copy" data-name="Rectangle 5 copy" class="cls-2" d="M336,150L141.014,345,165,368.988,360,174Z"/>
+  <path id="Rectangle_5_copy_2" data-name="Rectangle 5 copy 2" class="cls-2" d="M165,150L359.986,345,336,368.988,141,174Z"/>
+</svg>

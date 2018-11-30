@@ -1,0 +1,430 @@
+@import 'base/config';
+
+/* Buttons */
+
+.ourscene-btn-1{
+	background-color: $button-color-1;
+	color: #FFF;
+}
+
+.ourscene-btn-1:hover, .ourscene-btn-1:focus{
+	background-color: lighten($button-color-1, 10%);
+	color: #FFF;
+}
+
+.ourscene-btn-2{
+	background-color: $button-color-2;
+	color: #FFF;
+}
+
+.ourscene-btn-3{
+	background-color: $button-color-3;
+	color: #FFF;
+}
+
+.ourscene-btn-3:hover, .ourscene-btn-3:focus{
+	background-color: darken($button-color-3, 10%);
+	color: #FFF;
+}
+
+.ourscene-btn-4{
+	background-color: $button-color-4;
+	color: #FFF;
+}
+
+.ourscene-btn-4:hover, .ourscene-btn-4:focus{
+	background-color: darken($button-color-4, 10%);
+	color: #FFF;
+}
+
+.ourscene-btn-plain-1{
+	background-color: transparent;
+	color: $brand-color-1;
+	box-shadow: none;
+}
+
+.ourscene-btn-plain-1:hover, .ourscene-btn-plain-1:focus{
+	background-color: transparent;
+	color: $brand-color-1;
+	box-shadow: none;
+}
+
+
+/* Button group */
+
+.btn-group{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	.btn{
+		float: left;
+		box-shadow: none;
+		border: 1px solid $separator-color-1;
+		border-radius: 0;
+	}
+
+	.btn:first-child{
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	.btn:last-child{
+		border-top-right-radius: 4px;
+    	border-bottom-right-radius: 4px;
+	}
+
+	.btn:not(:last-child){
+		border-right: 0;
+	}
+}
+
+/* LINK */
+.ourscene-link-1{
+	color: $brand-color-1 !important;;
+	text-decoration: underline;
+	text-transform: none !important;
+	text-align: center;
+	margin-right: 0 !important;
+
+	:hover{
+		color: $brand-color-1 !important;;
+		text-decoration: underline;
+		text-transform: none !important;
+	}
+}
+
+/* Colors */
+
+.required-color{
+	color: red;
+}
+
+.confirm-color{
+	color: $secondary-color-1;
+}
+
+.reject-color{
+	color: $secondary-color-2;
+}
+
+.cancel-color{
+	color: $secondary-color-2;
+}
+
+.border-color-1{
+	color: $border-color-1;
+}
+
+/* Labels */
+
+.ourscene-label-1{
+	font-size: 1rem;
+    color: #333;
+    font-family: "OpenSans-SemiBold";
+}
+
+/* Image containers */
+
+.circular-img-container{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	border: 1px solid $separator-color-1;
+
+	@media only screen and (min-width : 993px) {
+		height: 90px;
+		width: 90px;
+	}
+}
+
+/* Modals */
+
+.ourscene-modal-title-1{
+	color: $brand-color-1;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+/* Cards */
+
+.ourscene-card-1{
+	max-width: 250px;
+	margin: 0 auto;
+
+	.card{
+		margin-bottom: 0;
+	}
+
+	.card-content{
+		padding: 0;
+	}
+
+	.card-action{
+		padding: 10px;
+	}
+
+	.profile-pic-container{
+		padding: 35px 0;
+	}
+
+	.profile-pic{
+		margin: 0 auto;
+		display: block;
+		width: 80px;
+		height: 80px;
+	}
+
+	.action-container{
+
+		a{
+			display: block;
+			font-size: 0.8rem;
+		}
+
+		.action-series{
+			padding: 10px 0;
+		}
+
+		.col{
+			padding: 0 5px;
+		}
+
+		.col:first-child{
+			padding-left: 0;
+		}
+
+		.col:last-child{
+			padding-right: 0;
+		}
+	}
+
+
+}
+
+/* Text containers */
+
+.text-container-ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Font weights */
+
+.normal-weight{
+	font-family: "OpenSans-Regular";
+}
+
+.light-weight{
+	font-family: "OpenSans-Light";
+}
+
+.bold-weight{
+	font-family: "OpenSans-SemiBold";
+}
+
+/* Display */
+
+.l-display-only{
+	display: none;
+
+	@media only screen and (min-width : 993px){
+		display: block;
+	}
+}
+
+.l-no-display{
+	@media only screen and (min-width : 993px){
+		display: none;
+	}
+}
+
+/* Visibility */
+
+.visible{
+	visibility: visible;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+/* Cursors */
+
+.no-cursor{
+	cursor: none;
+}
+
+/* Fields */
+
+.success-field{
+	background-color: $secondary-color-1;
+	color: #FFF;
+	font-family: "OpenSans-Light";
+	padding: 5px;
+	margin: 10px 0;
+}
+
+.error-field{
+	background-color: #F06D71;
+	color: #FFF;
+	font-family: "OpenSans-Light";
+	padding: 5px;
+	margin: 10px 0;
+}
+
+.warning-field{
+	background-color: #ff7518;
+	color: #FFF;
+	font-family: "OpenSans-Light";
+	padding: 5px;
+	margin: 10px 0;
+}
+
+/* Calendar */
+
+.ourscene-calendar{
+	th, td, thead, tbody, .fc-divider, .fc-row, .fc-popover{
+		border-color: $separator-color-1;
+		color: #7A7A7A;
+	}
+
+	thead{
+
+		th, td{
+			border-color: transparent;
+			border-bottom: $separator-color-1;
+		}
+
+		th{
+			font-family: "OpenSans-SemiBold";
+			font-size: 0.8rem;
+			text-align: left;
+			padding: 2px;
+
+			@media only screen and (min-width : 993px) {
+				font-size: 1.2rem;
+				padding: 5px;
+			}
+		}
+	}
+}
+
+/* Search */
+
+.search-dropdown{
+	
+	line-height: initial;
+
+	.search-divider{
+		// padding-left: 15px;
+		font-family: "OpenSans-Regular" !important;
+		color: #aaa;
+		font-size: 0.9rem !important;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		background-color: #efefef;
+		line-height: initial;
+
+		a{
+			display: block;
+			color: #aaa;
+		}
+	}
+	
+	.view-all-search{
+		font-weight: bold;
+		color: #aaa;
+		padding-top: .8em;
+		padding-bottom: .8em;
+		font-size: 1em;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	li{
+		font-family: "OpenSans-Regular" !important;
+
+		a{
+			padding: 5px 15px 0;
+			color: $secondary-color-1 !important;
+			text-transform: none !important;
+			font-size: 14px;
+			font-weight: 100;
+		}
+
+		div{
+			padding: 0 15px 5px;
+			color: #aaa;
+			height: auto;
+			font-size: 10px;
+		
+			i{
+				display: inline-block;
+				line-height: 0;
+				height: 100%;
+				font-size: 10px;
+				margin: 0 0.3rem;
+			}
+		}
+	}
+}
+
+/* Pagination */
+
+ul.pagination{
+
+	float: right;
+
+	li.active{
+		color: #FFF;
+		background-color: $brand-color-1;
+	}
+}
+
+/* Progress bar */
+
+.progress{
+	background-color: $brand-color-2;
+
+	.indeterminate{
+		background-color: lighten($brand-color-2, 30%);
+	}
+}
+
+/*
+	Registration
+*/
+
+.registration-txtbx-1 {
+	border: none;
+	outline: none;
+	border-bottom : gray 1px solid;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+input:focus{
+	outline: none;
+	border:none;
+	box-shadow:none;
+}
+
+//Alignment
+.full-width{
+	width:100%;
+}
+
+.center-element-vertically{
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+}

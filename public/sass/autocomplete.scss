@@ -1,0 +1,27 @@
+
+// custom dropdown
+.dropdown-content.autocomplete{
+	span.search-divider{
+		padding: .2em 2%;
+		text-align: center;
+		background-color: #eee;
+		width: 100%;
+		font-size: .9em;
+		display: block;
+	}
+	li{
+		div{
+			padding: 0 16px;
+			padding-bottom: 5px;
+			color: #aaa;
+			i{
+				margin: 0 .3em;
+				display: inline-block;
+			}
+		}
+		a{
+			padding-bottom: 0;
+
+		}
+	}
+}

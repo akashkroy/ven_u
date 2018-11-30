@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #534d93;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="user_copy_2" data-name="user copy 2" class="cls-1" d="M250,477C124.834,477,23,375.168,23,250S124.834,23,250,23,477,124.834,477,250,375.166,477,250,477Zm0-436.2C134.649,40.8,40.8,134.649,40.8,250S134.649,459.2,250,459.2,459.2,365.353,459.2,250,365.352,40.8,250,40.8Z"/>
+  <rect class="cls-2" x="120" y="370" width="269" height="16"/>
+  <rect class="cls-2" x="140" y="114" width="113" height="264"/>
+  <rect class="cls-2" x="249" y="216" width="122" height="162"/>
+  <path id="Rectangle_2_copy_7" data-name="Rectangle 2 copy 7" class="cls-3" d="M148,123h47v43H148V123Zm51,0h47v43H199V123Zm-51,50h47v43H148V173Zm51,0h47v43H199V173Zm-51,50h47v43H148V223Zm51,0h47v43H199V223Zm-51,50h47v43H148V273Zm51,0h47v43H199V273Zm60-50h47v43H259V223Zm51,0h47v43H310V223Zm-51,50h47v43H259V273Zm51,0h47v43H310V273ZM166,323h64v45H166V323Zm112,0h64v45H278V323Z"/>
+</svg>

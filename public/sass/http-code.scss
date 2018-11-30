@@ -1,0 +1,51 @@
+@import 'base/config';
+@import 'base/typography';
+@import 'base/utils';
+
+html{
+	height: 100%;
+
+	font-size: 10px;
+
+	@media only screen and (min-width : 768px) {
+		font-size: 12px;
+	}
+}
+
+body{
+	height: 100%;
+	font-family: "OpenSans-Regular";
+}
+
+.wrapper{
+	
+	height: 100%;
+    width: 100%;
+    display: table;
+
+	.wrapper-content{
+		display: table-cell;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+#http-status{
+	text-align: center;
+
+	#ourscene-logo{
+		height: 70px;
+		margin-bottom: 70px;
+	}
+
+	#code{
+		color: $brand-color-1;
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	#message{
+		font-size: 1.25rem;
+		font-family: "OpenSans-Light";
+	}
+}

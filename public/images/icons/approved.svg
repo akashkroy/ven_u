@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #46bfa7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="251.5" cy="255.5" r="236.5"/>
+  <path class="cls-2" d="M120.623,234.458L223.861,337.7l-24.042,24.042L96.582,258.5Z"/>
+  <path id="Rectangle_5_copy" data-name="Rectangle 5 copy" class="cls-2" d="M371,142L176.014,337,200,360.988,395,166Z"/>
+</svg>
